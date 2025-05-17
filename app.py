@@ -193,4 +193,4 @@ def home():
     return render_template('index.html', movie_list=movies['title'].values)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=port, debug=True)
